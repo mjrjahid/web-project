@@ -1,0 +1,96 @@
+<html>
+<head>
+	<title>Bus Reserve</title>
+	<link rel="stylesheet" type="text/css" href="busrsrv.css">
+</head>
+
+<body>
+	<h1>Journey details</h1>
+	<style>
+		h1{
+			border: 2px inset #9dc1c6;
+		}
+	</style><br>
+    <div class="reserve" >
+
+    <form method="post" id="reserve" action="" >
+    	
+
+
+        <label>Origin city:</label><br>
+        <input type="text"  name="fname"id="name"
+        placeholder="Enter city Name"><br><br>
+        <label>Destination city:</label><br>
+        <input type="text" name="lname"id="name"
+        placeholder="Enter city Name"><br><br>
+
+        <label>Date of Journey</label><br>
+        <input type="date" id="jdate"  name="jdate"><br><br>
+        <label>Date of Return(optional)</label><br>
+        <input type="date" id="rdate" name="rdate"><br><br>
+
+        <label>Bus type:</label>
+        <select id="btyp">
+            <option value="1">Non Ac</option>
+            <option value="2">Ac</option>
+            <option value="3">Economy Class Ac</option>
+            <option value="4">Business Class Ac</option>
+        </select><br><br>
+    	
+    	
+
+        <label>No. of Bus Seats:</label>
+        <select id="bseat">
+            <option value="1">28</option>
+            <option value="2">36</option>
+            <option value="3">40</option>
+        </select><br><br>
+    	<label>No. of buses required:</label>
+    	<input type="number" name="busmunber"id="bnumber"><br><br>
+
+    	<label>Email Address:</label><br>
+    	<input type="Email" name="email"id="ename"
+    	placeholder="Enter Your Email"><br><br>
+    	<label>Address:</label><br>
+    	<input type="text" name="Address"id="addressname"
+    	placeholder="Enter Your Address"><br><br>
+    	
+    </form>                
+    </div><br><br><br><br><br><br><br><br>
+
+
+
+
+
+     <h1>Contacts Details</h1><br>
+        
+        <style>
+        h1{
+            border: 2px double #9dc1c6;
+        }
+    </style>
+
+    <div class="contact" >
+
+    <form method="post" id="reserve" action="" >
+        
+        <label>Contact Person Name:</label><br>
+        <input type="text"  name="pname"id="pname"
+        placeholder="Enter Name"><br><br>
+        <label>Mobile No.</label><br>
+        <input type="number" name="number" id="mnumber"><br><br>
+        <label>Email Address:</label><br>
+        <input type="Email" name="email"id="name"
+        placeholder="Enter Your Email"><br><br>
+        <label>Address:</label><br>
+        <input type="text" name="Address"id="addressname"
+        placeholder="Enter Your Address"><br><br><br><br>
+
+        <input type="Submit" value="Submit Reservation Request" id="subr"  name="Submit">
+
+
+    </form>                
+    </div>
+
+</body>
+</html>

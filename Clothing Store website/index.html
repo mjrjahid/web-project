@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fashion Fyre </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+ 
+</head>
+<body>
+ <div class="main" >
+   <div class="topbar"></div>
+
+   <div class="social_icon">
+    <div class ="container">
+       <div class="icon">
+     <a href="https://www.gmail.com"><img src="images/icon/1.png" width="30px" height="40px"></a>
+     <a href="https://www.instagram.com"><img src="images/icon/2.png" width="30px" height="40px"></a>
+     <a href="https://www.facebook.com"><img src="images/icon/3.png" width="40px" height="40px"></a>
+     <a href="https://twitter.com"><img src="images/icon/4.png" width="30px" height="40px"></a>
+       </div>
+         <div class="header_right">
+               <div class="login_register_btn">
+                <?php include 'login_register_btn.php';?>
+                   <a href="Login.php">Login </a>
+                   <a href="Register.php"> /Register </a>
+               </div>
+               <div class="cart_btn" >
+                <?php include 'cart_btn.php';?>
+                    <img src="images/icon/6.png" width="30px" height="25px" >
+                   <br><a href="Checkout Form.php"> cart() </a>
+               </div>
+             </div>
+
+</div>
+
+</div>
+      </div>
+
+             <div class="logo">
+              <img src="images/logo.jpg" width="200px" height="120px">
+             </div>    
+           
+           <div class="navbar">
+                 <?php include 'navbar.php';?>     
+              <a href="Home.php">Home</a>
+               <a href="MEN.php">MEN</a>
+               <a href="WOMEN.php">WOMEN</a>
+               <a href="BABY & KIDS.php">BABY & KIDS</a>
+               <div class="dropdown">  <?php include 'dropdown.php';?>
+              <button class="dropbtn" onclick="myFunction()">OFFERS ZONE
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  </button>
+                <div class="dropdown-content" id="myDropdown">
+                          
+                        <a href="Polo.php">Polo Tshirt 50% off</a>
+                       <a href="Jamdani.php">Jamdani Shari 60% off</a>
+                        <a href="Jens.php">Jens 70%off</a>
+                </div>
+                 </div> 
+               <a href="CONTACT.php">CONTACT</a>
+
+
+
+
+           </div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+
+
+
+        
+<div class="content section" style="max-width:80%" align="center">
+  <img class="mySlides" src="images/1.jpg" style="width:60%" "height:30%">
+  <img class="mySlides" src="images/2.png" style="width:60%" "height:50%">
+  <img class="mySlides" src="images/3.jpg" style="width:60%" "height:50%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+
+<div class="footer">
+  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <br>
+    <button type="button" class="btn btn-danger" style="color: #2f3542;"> Sign Up</button>
+  </form>
+
+</div>
+
+   
+</body>
+  </html>

@@ -1,0 +1,125 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	text-align: center;
+	padding: 20px;
+}
+.reserve
+{
+  background: url(travel.jpg) center; 
+  background-size: cover;
+  height: 500px;
+}
+#reserve
+ {  
+ 	text-align: center;
+	background: #9dc1c6;
+	width: 500px;
+	margin: 0px 0px 0px 430px;
+	color: black;
+	font-size: 18px;
+	padding: 20px;
+	border-radius: 10px;
+	
+}
+.contact
+{
+  background: url(travel.jpg) center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+
+}
+label
+{
+   color: black;
+   font-family:sans-serif;
+   font-size: 18px;
+   font-style: bold;
+
+}
+#name{
+
+	width: 300px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+#jdate
+{
+	width: 168px;
+border-radius: 3px;
+margin: 5px;
+}
+#rdate
+{
+width: 175px;
+border-radius: 5px;
+margin: 3px;
+
+}
+#btyp
+{
+	width: 100px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+#bseat
+{
+	width: 60px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+#bnumber
+{
+	width: 60px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+#ename
+{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+#addressname
+{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+#pname
+{
+	width: 300px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+#mnumber
+{
+	width: 300px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+
+}
+#subr
+{
+	width: 250px;
+padding: 5px;
+text-align: center;
+font-style: bold;
+font-family: sans-serif;
+font-size: 16px;
+border-radius: 3px;
+font-weight: 600px;
+margin-left: 5px;
+}
